@@ -1,5 +1,4 @@
 # CP-SPP: Constraint-based model for Service Placement Problem in Fog Computing
-================================================================================================
 
 ## Reference
 --------------
@@ -12,6 +11,7 @@ This repository contains the source code of the CP-SPP model provided in [1] tha
 
 
 An example is provided to run and quickly apprehend the model.
+
 Inputs: property files with the descriptions of :
         - Network infrastructure 
         and
