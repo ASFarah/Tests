@@ -1,4 +1,6 @@
 # CP-SPP: Constraint-based model for Service Placement Problem in Fog Computing
+===============================================================================
+
 
 ## Reference
 --------------
@@ -12,26 +14,20 @@ This repository contains the source code of the CP-SPP model provided in [1] tha
 
 An example is provided to run and quickly apprehend the model.
 
-Inputs: property files with the descriptions of :
-        - Network infrastructure 
-        and
-        - The services to deploy
+**Inputs**: property files with the descriptions of :
+    - Network infrastructure 
+    and
+    - The services to deploy
 
-Output: The infrastructure nodes on which to place each component of each service.
+**Output**: The infrastructure nodes on which to place each component of each service.
 
 ## Requirements
 --------------
-<u>Tools</u>:
+This project hosts samples based on choco-solver-4.10.0. This is mainly a source project and no executable jar provided. To easily play around with choco-solver, one needs:
 
 - JDK8+
 - Maven 3+
-
-- You should be able to run it within the IDE (IntelliJ IDEA).
-
-<u>Libraries</u>:
-
-- [Choco Solver](https://github.com/chocoteam/choco-solver)
-
+- on IDE (eclipse, IntelliJ IDEA, etc)
 
 ## Installation 
 --------------
@@ -52,7 +48,7 @@ You can run the project from inside an IDE, by running the main method in ```src
 
 ### Parameters
 
-This repository comes with an example properties files, at "reources" folder (```"./src/main/resources/Infra_Ye_Small.properties"``` and ``` "./src/main/resources/Appli_Ye.properties"```).  These files contain respectively the infrastructure and services descriptions (topologie(s), nodes/edges capacities/requirements, ...)
+This repository comes with an example properties files available in the "resources" folder (```"./src/main/resources/Infra_Ye_Small.properties"``` and ``` "./src/main/resources/Appli_Ye.properties"```).  These files contain respectively the infrastructure and services descriptions (topology(ies), nodes/edges capacities/requirements, ...)
 
 Follow the same conventions while writing your own ```.properties``` file.  
 And if you wrote your own ```.properties``` file, please change the argument of the variables "Infra_src" and "Appli"  in the main function of ```java/src/Placement.java``` accordingly.
