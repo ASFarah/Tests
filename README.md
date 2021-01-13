@@ -50,15 +50,12 @@ Output: The infrastructure nodes on which to place each component of each servic
 --------------
 You can run the project from inside an IDE, by running the main method in ```src/main/java/io/cprudhom/saica/Placement.java```
 
-### Properties files (find in the "resources" folder)
-
-This repository comes with an example properties files, at ```"./src/main/resources/Infra_Ye_Small.properties"``` and ``` "./src/main/resources/Appli_Ye.properties"```.  These files contain respectively the infrastructure and services descriptions (topologie(s), nodes/edges capacities/requirements, ...)
-
-Follow the same conventions while writing your own ```.properties``` file.  
-
 ### Parameters
 
-If you wrote your own ```.properties``` file, please change the argument of the variables "Infra_src" and "Appli"  in the main function of ```java/src/Placement.java``` accordingly.
+This repository comes with an example properties files, at "reources" folder (```"./src/main/resources/Infra_Ye_Small.properties"``` and ``` "./src/main/resources/Appli_Ye.properties"```).  These files contain respectively the infrastructure and services descriptions (topologie(s), nodes/edges capacities/requirements, ...)
+
+Follow the same conventions while writing your own ```.properties``` file.  
+And if you wrote your own ```.properties``` file, please change the argument of the variables "Infra_src" and "Appli"  in the main function of ```java/src/Placement.java``` accordingly.
 
 ### Run the project
 
@@ -67,12 +64,9 @@ You can run the project from inside an IDE, by running the main method in ```jav
 an output would look like this:
 
 ```
-Model[CP-SPP], 549 variables, 427 constraints, building time: 0,154s, w/o user-defined search strategy, w/o complementary search strategy
+Model[CP-SPP], 551 variables, 427 constraints, building time: 0,152s, w/o user-defined search strategy, w/o complementary search strategy
 
-C0 ----> 1;C1 ----> 1;C2 ----> 1;C3 ----> 0;C4 ----> 1;C5 ----> 1;C6 ----> 1;C7 ----> 0;C8 ----> 1;C9 ----> 1;C10 ----> 11;C11 ----> 12;C12 ----> 13;C13 ----> 14;C14 ----> 15;C15 ----> 16;
-Model[CP-SPP], 1 Solutions, MINIMIZE nb distinct Hosts = 8, Resolution time 0,083s, 15 Nodes (180,3 n/s), 3 Backtracks, 0 Backjumps, 3 Fails, 0 Restarts
-
-C0 ----> 1;C1 ----> 1;C2 ----> 1;C3 ----> 1;C4 ----> 1;C5 ----> 1;C6 ----> 1;C7 ----> 1;C8 ----> 1;C9 ----> 1;C10 ----> 11;C11 ----> 12;C12 ----> 13;C13 ----> 14;C14 ----> 15;C15 ----> 16;
-Model[CP-SPP], 2 Solutions, MINIMIZE nb distinct Hosts = 7, Resolution time 0,093s, 16 Nodes (171,3 n/s), 14 Backtracks, 0 Backjumps, 8 Fails, 0 Restarts
+C0 ----> 3;C1 ----> 3;C2 ----> 1;C3 ----> 2;C4 ----> 2;C5 ----> 7;C6 ----> 1;C7 ----> 2;C8 ----> 8;C9 ----> 2;C10 ----> 11;C11 ----> 12;C12 ----> 13;C13 ----> 14;C14 ----> 15;C15 ----> 16;
+Model[CP-SPP], 1 Solutions, MINIMIZE nb distinct Hosts = 11, Resolution time 0,239s, 441 Nodes (1 841,5 n/s), 837 Backtracks, 0 Backjumps, 426 Fails, 0 Restarts
 
 ```
